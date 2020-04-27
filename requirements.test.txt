@@ -2,6 +2,7 @@ pytest
 pytest-asyncio
 pytest-cov
 flake8
+respx
 
 # require to TestClient (starlette.io)
 requests
