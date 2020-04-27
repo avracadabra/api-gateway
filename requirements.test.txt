@@ -1,0 +1,7 @@
+pytest
+pytest-asyncio
+pytest-cov
+flake8
+
+# require to TestClient (starlette.io)
+requests

@@ -1,0 +1,8 @@
+asyncpg
+httpx
+starlette
+tartiflette
+-e git+https://github.com/petrus-v/tartiflette-asgi@support-starlette-v0.13#egg=tartiflette-asgi
+# ujson is used by UJSONResponse
+ujson
+uvicorn

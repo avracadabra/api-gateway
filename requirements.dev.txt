@@ -1,0 +1,9 @@
+-r requirements.test.txt
+ipdb
+ipdbplugin
+ipython
+pylint
+black
+pre-commit
+pylint
+black
