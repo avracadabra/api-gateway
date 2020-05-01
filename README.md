@@ -10,3 +10,13 @@ and combines them into a synchronous experience for the user.
 
 This project is based on [ASGI](https://asgi.readthedocs.io) as asynchronous
 web server and [tartiflette.](https://tartiflette.io) as GraphQL engine.
+
+## TODO
+
+Support multiple product software provider (PIM software, ERP, OpenData...):
+
+- openfoodfact
+- akeneo
+- odoo
+- treopim
+- icecat
