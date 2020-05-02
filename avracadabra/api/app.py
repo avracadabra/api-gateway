@@ -1,10 +1,14 @@
-from typing import Dict, Optional, Any
+from typing import TYPE_CHECKING, Any, Dict, Optional
+
+import httpx
 from starlette.applications import Starlette
 from starlette.responses import PlainTextResponse
-from starlette.routing import Route, Mount
+from starlette.routing import Mount, Route
 from tartiflette import Resolver
 from tartiflette_asgi import TartifletteApp
-import httpx
+
+if TYPE_CHECKING:
+    from tartiflette.execution.types import ResolveInfo
 
 
 async def home(request):
@@ -52,7 +56,7 @@ async def resolve_mutation_create_container(
 
 
 sdl = """
-type Query { 
+type Query {
     containers(offset: Int, limit: Int, query:String): [Container!]
 }
 

@@ -23,7 +23,7 @@ def test_wms_containers_only(client, containers_data):
     response = client.get("/graphql/?query={ containers { code } }")
     assert response.status_code == 200
     assert response.json() == {
-        "data": {"containers": [{"code": "empl 1"}, {"code": "warehouse"},]}
+        "data": {"containers": [{"code": "empl 1"}, {"code": "warehouse"}]}
     }
 
 

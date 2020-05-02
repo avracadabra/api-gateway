@@ -1,10 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""Setup script for bulk-management"""
-
 import os
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import parse_qs, urlparse
+
 from setuptools import find_packages, setup
 
 version = "0.1.0"
@@ -38,7 +34,7 @@ requirements = parse_requirements("requirements.txt")
 test_requirements = parse_requirements("requirements.test.txt")
 
 setup(
-    name="Bulk management API Gateway",
+    name="avracadabra-api-gateway",
     version=version,
     description="The API gateway takes all GraphQL API requests from a client "
     "(frontend: mobile app, browser app...), determines "
@@ -55,7 +51,7 @@ setup(
     include_package_data=True,
     install_requires=requirements,
     zip_safe=False,
-    keywords="bulk,wms",
+    keywords="bulk,wms,warehouse,stock",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",

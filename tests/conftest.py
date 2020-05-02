@@ -1,6 +1,7 @@
 import pytest
 from starlette.testclient import TestClient
-from bulk_api.api import create_app
+
+from avracadabra.api.app import create_app
 
 
 @pytest.fixture(name="client", scope="session")
