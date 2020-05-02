@@ -1,8 +1,7 @@
-[Build status ![Build Status](
+[![Build Status](
 https://github.com/avracadabra/api-gateway/workflows/pipline/badge.svg?branch=master)](
 https://github.com/avracadabra/api-gateway/actions?query=branch%3Amaster)
-
-[Coverage Status ![Coverage Status](
+[![Coverage Status](
 https://coveralls.io/repos/github/avracadabra/api-gateway/badge.svg?branch=master)](
 https://coveralls.io/github/avracadabra/api-gateway?branch=master)
 
