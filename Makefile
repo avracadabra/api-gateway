@@ -17,7 +17,7 @@ help:
 
 setup: ## install python project dependencies
 	pip install --upgrade pip wheel
-	pip install .
+	pip install -U .[test]
 
 setup-dev: ## install python project dependencies for development
 	pip install --upgrade pip wheel
