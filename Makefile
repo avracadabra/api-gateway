@@ -17,7 +17,12 @@ help:
 
 setup: ## install python project dependencies
 	pip install --upgrade pip wheel
-	pip install -U .[test]
+	# waiting https://github.com/tartiflette/tartiflette-asgi/pull/106 merged
+	# and released
+	# pip install -U .[test]
+	pip install -U -r requirements.test.txt
+	pip install -U -r requirements.txt
+	pip install .
 
 setup-dev: ## install python project dependencies for development
 	pip install --upgrade pip wheel
