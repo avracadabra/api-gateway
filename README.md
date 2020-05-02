@@ -7,7 +7,7 @@ https://coveralls.io/repos/github/avracadabra/api-gateway/badge.svg?branch=maste
 https://coveralls.io/github/avracadabra/api-gateway?branch=master)
 
 
-# Bulk management API Gateway
+# Avracadabra stock management API Gateway
 
 The API gateway takes all GraphQL API requests from a client
 (frontend: mobile app, browser app..., scripting or any other services),
