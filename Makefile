@@ -52,8 +52,6 @@ clean-test: ## remove test artifacts
 	rm -f .coverage
 
 lint: ## check style with flake8
-	pip install -U pip wheel pre-commit
-	pre-commit install --install-hooks
 	pre-commit run --all-files --show-diff-on-failure
 
 test: ## run tests
