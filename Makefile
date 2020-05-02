@@ -60,7 +60,7 @@ lint: ## check style with flake8
 	pre-commit run --all-files --show-diff-on-failure
 
 test: ## run tests
-	py.test -vvv
+	py.test -vvv tests
 
 documentation: ## generate documentation
 	# TODO
