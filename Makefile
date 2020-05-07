@@ -34,7 +34,8 @@ run-dev: ## launch asgi development server
 	uvicorn avracadabra.api.asgi_app:app --reload
 
 run-gunicorn: ## launch asgi server with gunicorn
-	# TODO
+	# https://www.uvicorn.org/deployment/#gunicorn
+	gunicorn -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000 avracadabra.api.asgi_app:app
 
 clean: clean-build clean-pyc clean-test ## remove all build, test, coverage and Python artifacts
 
