@@ -31,7 +31,7 @@ setup-dev: ## install python project dependencies for development
 	pip install -e .
 
 run-dev: ## launch asgi development server
-	uvicorn avracadabra.api.asgi_app:app --reload
+	uvicorn avracadabra.api.asgi_app:app --reload --host 0.0.0.0 --port 8000
 
 run-gunicorn: ## launch asgi server with gunicorn
 	# https://www.uvicorn.org/deployment/#gunicorn
